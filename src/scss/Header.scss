@@ -1,0 +1,34 @@
+@import "~bootstrap/scss/bootstrap";
+
+$myColor: red;
+$bgColor: #0072b5;
+$searchColor: white;
+$cartColor: green;
+$button: #406a28;
+
+.header {
+  color: #000;
+  background: $myColor;
+}
+
+.inerrow {
+  background-color: $bgColor;
+  height: 70px;
+  max-height: 70px;
+}
+
+// .logo {
+//   background-color: $searchColor;
+// }
+.button {
+  background-color: $button !important;
+}
+.cartlogin {
+  text-align: center;
+  //background-color: $cartColor;
+}
+.cart div {
+  text-align: center;
+  background-color: red;
+  width: auto;
+}
