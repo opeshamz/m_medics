@@ -1,0 +1,16 @@
+@import "~bootstrap/scss/bootstrap";
+
+.banner {
+  max-height: 500px;
+}
+.bannerrow {
+  background-color: #88e013;
+}
+
+.bannercol {
+  background-color: #88d128;
+  height: 5rem;
+  justify-content: center;
+
+  align-content: center;
+}

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button } from "./Button";
+// import { Button } from "./Button";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 import Dropdown from "./Dropdown";
@@ -30,10 +30,6 @@ function Navbar() {
   return (
     <>
       <nav className="navbar">
-        <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-          EPIC
-          <i class="fab fa-firstdraft" />
-        </Link>
         <div className="menu-icon" onClick={handleClick}>
           <i className={click ? "fas fa-times" : "fas fa-bars"} />
         </div>
@@ -75,7 +71,34 @@ function Navbar() {
               Contact Us
             </Link>
           </li>
-          <li>
+          <li className="nav-item">
+            <Link
+              to="/contact-us"
+              className="nav-links"
+              onClick={closeMobileMenu}
+            >
+              Contact Us
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link
+              to="/contact-us"
+              className="nav-links"
+              onClick={closeMobileMenu}
+            >
+              Contact Us
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link
+              to="/contact-us"
+              className="nav-links"
+              onClick={closeMobileMenu}
+            >
+              Contact Us
+            </Link>
+          </li>
+          {/* <li>
             <Link
               to="/sign-up"
               className="nav-links-mobile"
@@ -83,9 +106,9 @@ function Navbar() {
             >
               Sign Up
             </Link>
-          </li>
+          </li> */}
         </ul>
-        <Button />
+        {/* <Button /> */}
       </nav>
     </>
   );

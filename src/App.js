@@ -1,28 +1,33 @@
 import React from 'react';
-import Home from './pages/Home';
+import Header from './components/header';
+import Home from './pages/home';
 import Navbar from './components/navbar';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Services from './components/pages/Services';
-import Products from './components/pages/Products';
-import ContactUs from './components/pages/ContactUs';
-import SignUp from './components/pages/SignUp';
-import Marketing from './components/pages/Marketing';
-import Consulting from './components/pages/Consulting';
-
+import Services from './pages/servicess';
+import Products from './pages/product';
+import ContactUs from './pages/contact';
+import SignUp from './pages/signup';
+import Marketing from './pages/maketing';
+import Consulting from './pages/consulting';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 function App() {
   return (
-    <Router>
-      <Navbar />
-      <Switch>
-        <Route path='/' exact component={Home} />
-        <Route path='/services' component={Services} />
-        <Route path='/products' component={Products} />
-        <Route path='/contact-us' component={ContactUs} />
-        <Route path='/sign-up' component={SignUp} />
-        <Route path='/marketing' component={Marketing} />
-        <Route path='/consulting' component={Consulting} />
-      </Switch>
-    </Router>
+    <>
+      <Header />
+      <Router>
+        <Navbar />
+        <Switch>
+          <Route path='/' exact component={Home} />
+          <Route path='/services' component={Services} />
+          <Route path='/products' component={Products} />
+          <Route path='/contact-us' component={ContactUs} />
+          <Route path='/sign-up' component={SignUp} />
+          <Route path='/marketing' component={Marketing} />
+          <Route path='/consulting' component={Consulting} />
+        </Switch>
+      </Router>
+    </>
   );
 }
 

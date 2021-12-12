@@ -1,0 +1,22 @@
+* {
+}
+body {
+  overflow-x: hidden;
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+}
+html {
+  font-size: 90.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 5.5rem;
+  scroll-behavior: smooth;
+}
+.section {
+  margin-top: 50px;
+ 
+}
