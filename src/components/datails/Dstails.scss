@@ -1,14 +1,46 @@
 @import "~bootstrap/scss/bootstrap";
 
-.detailsrow {
-}
+// .detailsrow {
+// }
 .detailscol {
   width: 12rem;
   height: 12rem;
-  background-color: blue;
   border-radius: 50%;
   margin-bottom: 12px;
 }
 .detailscolpe {
   align-content: center;
+}
+
+#medicine {
+  background-image: url("./imagies/medicine.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#vitamins {
+  background-image: url("./imagies/vitamins.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#antibiotics {
+  background-image: url("./imagies/antibiotics.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#services {
+  background-image: url("./imagies/services.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#skin-care {
+  background-image: url("./imagies/skin-care.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
