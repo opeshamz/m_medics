@@ -7,20 +7,29 @@ function index(props) {
             <h1>SHOP BY CONDITION</h1>
             <div className='d-flex flex-row justify-content-evenly align-items-center'>
                 <div className='conditinssub' id='pain'>
-                    <h4>PAIN</h4>
+                    <div>
+                        <h4>PAIN</h4>
+                    </div>
+
                 </div>
                 <div className='conditinssub' id='eye'>
-                    <h4>
-                        EYE
-                    </h4>
+                    <div>
+                        <h4>
+                            EYE
+                        </h4>
+                    </div>
                 </div>
                 <div className='conditinssub' id='cough'>
-                    COUGH
+                    <div>
+                        <h4>COUGH</h4>
+                    </div>
                 </div>
                 <div className='conditinssub' id='flu'>
-                    <h4>
-                        FLU
-                    </h4>
+                    <div>
+                        <h4>
+                            FLU
+                        </h4>
+                    </div>
                 </div>
             </div>
         </div>
