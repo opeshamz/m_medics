@@ -11,6 +11,8 @@ import Marketing from './pages/maketing';
 import Consulting from './pages/consulting';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import  Footer from './components/footer';
+
 function App() {
   return (
     <>
@@ -26,6 +28,7 @@ function App() {
           <Route path='/marketing' component={Marketing} />
           <Route path='/consulting' component={Consulting} />
         </Switch>
+        <Footer />
       </Router>
     </>
   );
