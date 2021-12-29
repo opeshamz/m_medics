@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 import Dropdown from "./Dropdown";
+import { RiArrowDropDownLine } from "react-icons/ri";
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -49,9 +50,17 @@ function Navbar() {
               className="nav-links"
               onClick={closeMobileMenu}
             >
-              Services <i className="fas fa-caret-down" />
+              Medicines & Helth<RiArrowDropDownLine />
             </Link>
-            {dropdown && <Dropdown />}
+            <Link
+              to="/services"
+              className="nav-links"
+              onClick={closeMobileMenu}
+            >
+              Shop By Category <RiArrowDropDownLine />
+              {dropdown && <Dropdown />}
+            </Link>
+            
           </li>
           <li className="nav-item">
             <Link
@@ -59,7 +68,16 @@ function Navbar() {
               className="nav-links"
               onClick={closeMobileMenu}
             >
-              Products
+             Services <RiArrowDropDownLine />
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link
+              to="/contact-us"
+              className="nav-links"
+              onClick={closeMobileMenu}
+            >
+              About 
             </Link>
           </li>
           <li className="nav-item">
@@ -71,44 +89,7 @@ function Navbar() {
               Contact Us
             </Link>
           </li>
-          <li className="nav-item">
-            <Link
-              to="/contact-us"
-              className="nav-links"
-              onClick={closeMobileMenu}
-            >
-              Contact Us
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link
-              to="/contact-us"
-              className="nav-links"
-              onClick={closeMobileMenu}
-            >
-              Contact Us
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link
-              to="/contact-us"
-              className="nav-links"
-              onClick={closeMobileMenu}
-            >
-              Contact Us
-            </Link>
-          </li>
-          {/* <li>
-            <Link
-              to="/sign-up"
-              className="nav-links-mobile"
-              onClick={closeMobileMenu}
-            >
-              Sign Up
-            </Link>
-          </li> */}
         </ul>
-        {/* <Button /> */}
       </nav>
     </>
   );
